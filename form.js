@@ -1,4 +1,17 @@
 
+var alertDiv = document.getElementById("alert");
+
+function showAlert(message, color) {
+    var alertMessage = document.getElementById("alert-message");
+    alertMessage.innerHTML = message;
+    alertMessage.style.color = color;
+    alertDiv.style.display = "block";
+
+}
+function closeDialog() {
+    alertDiv.style.display = "none";
+}
+
 $(document).ready(function () {
     $("form").submit(function (event) {
         var formData = {
@@ -17,11 +30,18 @@ $(document).ready(function () {
             encode: true,
 
             success: function (result) {
+                var message = result.responseJSON.Message;
+                // alert(message);
+                /*Custom alert to allow styling */
+                showAlert(message, "green");
 
-                alert(result.responseJSON.Message);
             },
             error: function (result) {
-                alert(result.responseJSON.Message);
+                var message = result.responseJSON.Message;
+                // alert(message);
+                /*Custom alert to allow styling */
+                showAlert(message, "red");
+
             }
         })
 

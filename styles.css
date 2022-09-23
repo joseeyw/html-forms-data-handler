@@ -1,0 +1,29 @@
+  #alert {
+      display: none;
+      background-color: whitesmoke;
+      border: 1px solid rgb(210, 191, 191);
+      position: fixed;
+      height: 80px;
+      width: 250px;
+      left: 40%;
+      top: 2%;
+      padding: 6px 8px 8px;
+      text-align: center;
+  }
+
+
+  button {
+      color: white;
+      height: 2.5rem;
+      width: 3rem;
+      padding: 7px;
+      cursor: pointer;
+      border: 2px solid white;
+      background-color: blue;
+  }
+
+  #close {
+      position: absolute;
+      right: 20px;
+      bottom: 10px;
+  }
