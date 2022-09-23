@@ -1,5 +1,7 @@
 
 var alertDiv = document.getElementById("alert");
+var alertMessageSuccessColor = "green";
+var alertMessageErrorColor = "yellow";
 
 function showAlert(message, color) {
     var alertMessage = document.getElementById("alert-message");
@@ -33,14 +35,14 @@ $(document).ready(function () {
                 var message = result.responseJSON.Message;
                 // alert(message);
                 /*Custom alert to allow styling */
-                showAlert(message, "green");
+                showAlert(message, alertMessageSuccessColor);
 
             },
             error: function (result) {
                 var message = result.responseJSON.Message;
                 // alert(message);
                 /*Custom alert to allow styling */
-                showAlert(message, "red");
+                showAlert(message, alertMessageErrorColor);
 
             }
         })

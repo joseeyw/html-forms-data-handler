@@ -1,6 +1,6 @@
   #alert {
       display: none;
-      background-color: whitesmoke;
+      background-color: black;
       border: 1px solid rgb(210, 191, 191);
       position: fixed;
       height: 80px;
