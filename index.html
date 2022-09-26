@@ -11,22 +11,41 @@
       <p id = alert-message></p>
       <button id = "close" onclick = "closeDialog()">Ok</button>
    </div>
+   <div class="nav-bar">
+    <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+    </ul>
+   </div>
     <form method="post" 
     name="post">
-    <div class="form">
-
-    <input type="text" id="full_name" name="full_name" placeholder="Full Name">
-    <input type="text" id="email" name="email" placeholder="Email"/>
-    <input type="text" id="phone" name="phone" placeholder="Phone No"/>
-    <input type="text" id="address" name="address" placeholder="Address"/>
+    <div class="udetailsform">
+    <div class="contact-info">Contact Information</div>
+    <div><span>FullName</span><input type="text" id="full_name" name="full_name" placeholder=" Input your full Name"></div>
+    <div><span>Email </span><input type="text" id="email" name="email" placeholder="Input your Email"/></div>
+    <div><span>Phone</span> <input type="text" id="phone" name="phone" placeholder="Input your Phone No"/></div>
+    <div><span>Address</span><input type="text" id="address" name="address" placeholder="Input your Address"/></div>
     
-    <input type="submit" value="Send" class="submit" />
+    <div class="submit-btn"><input type="submit" value="Send" class="submit" /></div>
     </div>
     </form>
 </div>
+<div class="table-data">
+
+        <table id="tbl" border="0" cellspacing="5" align="left" style="font-weight:bold"><div style="text-align:center; font-weight:bold">User Data</div>
+        <tr>
+            <td>ID</td>
+            <td>Message</td>
+            <td>Age</td>
+        </tr>
+
+        </table>
+</div>
    
+<div class="footer nav-bar" id="footer"> All rights reserved</div>
     </body>
-     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="form.js"></script>
 
 </html>

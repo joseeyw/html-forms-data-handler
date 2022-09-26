@@ -27,3 +27,74 @@
       right: 20px;
       bottom: 10px;
   }
+
+  .udetailsform {
+      float: left;
+      background-color: whitesmoke;
+      padding: 15px;
+      width: 350px;
+      border-radius: 10px;
+
+  }
+
+  .udetailsform div {
+      padding: 5px;
+      margin: 10px;
+  }
+
+  .udetailsform span {
+      padding: 5px;
+      margin-right: 10px;
+  }
+
+  .contact-info {
+      font-weight: bold;
+      font-size: 1.2rem;
+  }
+
+  .submit-btn {
+      text-align: center;
+      margin: 0 auto;
+  }
+
+  .submit-btn input[type="submit"] {
+      color: white;
+      border-radius: 5px;
+      background-color: green;
+      height: 40px;
+      width: 60px;
+  }
+
+  .nav-bar {
+      height: 50px;
+      background-color: whitesmoke;
+      margin: 10px;
+      padding: 10px;
+  }
+
+  .nav-bar ul {
+      list-style: none;
+  }
+
+  .nav-bar li {
+      padding: 10px;
+      float: left;
+  }
+
+  .footer {
+      float: left;
+      width: 100%;
+      text-align: center;
+  }
+
+  .table-data {
+      margin: 0 50px;
+      height: 100px;
+      background-color: whitesmoke;
+      float: left;
+  }
+
+  .table-data td {
+      width: 200px;
+      padding: 30px;
+  }
